@@ -6,8 +6,8 @@ from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from configs._base_.datasets.ChuongDuong import Data_process
-from configs._base_.models.crossformer_classify import CrossFormerBlock1D, CrossFormerClassifier1D
+from classification.configs._base_.datasets.data_process import Data_process
+from configs._base_.models.crossformer_classify import CrossFormerClassifier1D
 def main():
     # Load + augment + reshape dữ liệu
     path = "configs/_base_/datasets/Chuong Duong"
